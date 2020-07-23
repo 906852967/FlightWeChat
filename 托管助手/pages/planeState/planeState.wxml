@@ -1,0 +1,19 @@
+<view class="page-section page-section-spacing swiper">
+    <view class="swiper-tabs">
+        <text bindtap="switchTab" class="{{ currentTab == 0 ? 'active' : '' }}" data-current="0">状态信息</text>
+        <text bindtap="switchTab" class="{{ currentTab == 1 ? 'active' : '' }}" data-current="1">历史记录</text>
+        <i class="cursor" style="{{currentTab == 0 ? ' transform: translateX(0%)' : ' transform: translateX(100%)'}}"></i>
+    </view>
+	<swiper current="{{currentTab}}" bindchange="bindChange" class="swiper">
+        <swiper-item class="swiper-item">
+            <view class="swiper-item">
+                13123
+            </view>
+        </swiper-item>
+        <swiper-item class="swiper-item">
+            <view class="swiper-item">
+                <view></view>
+            </view>
+        </swiper-item>
+	</swiper>
+</view>

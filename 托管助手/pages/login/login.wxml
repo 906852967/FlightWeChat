@@ -1,0 +1,13 @@
+<!-- Login 登录-->
+<view class="login">
+	<text class="title">账号密码登录</text>
+	<form class="form" bindsubmit="formSubmit">
+		<input type="text" name="account" placeholder="请输入账号" />
+		<input password type="text" name="password" placeholder="请输入密码" />
+		<view class="code">
+			<input type="number" name="code" maxlength="6" placeholder="请输入验证码" />
+			<button bindtap="getCode" disabled="{{isDisadled}}">{{ codeText }}</button>
+		</view>
+		<button class="login_btn" formType="submit">登 录</button>
+	</form>
+</view>

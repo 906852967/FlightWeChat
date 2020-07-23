@@ -1,0 +1,22 @@
+<!-- 首页 -->
+<view class="home">
+	<swiper class="swiper">
+		<block wx:for="{{imgUrls}}" wx:key="*this">
+			<swiper-item>
+				<image src="{{item}}" mode="aspectFill"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="homeContent">
+		<block wx:for="{{[1, 2, 3]}}" wx:key="*this">
+			<view class="listItem">
+				<image src="{{imgUrls[0]}}" class="planeImg"></image>
+				<view class="itemRight">
+					<text class="state">状态：计划中</text>
+				</view>
+			</view>
+		</block>
+	</view>
+
+	<button bindtap="login">登录</button>
+</view>

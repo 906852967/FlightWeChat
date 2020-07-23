@@ -1,0 +1,29 @@
+/**index.wxss**/
+.swiper {
+  width: 750rpx;
+  height: 424rpx;
+}
+.swiper image {
+  width: 100%;
+}
+.homeContent {
+  margin-top: 50rpx;
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25rpx;
+}
+.listItem .planeImg {
+  width: 60%;
+  height: 240rpx;
+}
+.itemRight {
+  width: 40%;
+  text-align: right;
+  padding: 20rpx;
+}
+.itemRight .state {
+  color: #366587;
+  font-size: 32rpx;
+}

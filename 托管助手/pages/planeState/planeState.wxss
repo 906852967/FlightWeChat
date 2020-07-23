@@ -1,0 +1,53 @@
+/* pages/planeState/planeState.wxss */
+.swiper-tabs {
+    display: flex;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+}
+
+.swiper-tabs text {
+    flex: 1;
+    text-align: center;
+}
+
+.swiper-tabs text:active {
+    opacity: .6;
+}
+
+.swiper-tabs text.active {
+    color: coral;
+}
+.swiper-tabs .cursor {
+    height: 5rpx;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+.swiper-tabs .cursor::after {
+    content: '';
+    display: block;
+    background-color: #439df8;
+    height: 100%;
+    width: 40%;
+    margin: 0 auto;
+}
+.swiper-tabs text+text+.cursor {
+    width: 50%;
+}
+
+
+.swiper {
+    width: 100vw;
+    height: calc(100vh - 81rpx);
+}
+
+.swiper-item {
+    padding: 15rpx;
+    box-sizing: border-box;
+}
